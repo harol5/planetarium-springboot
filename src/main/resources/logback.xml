@@ -14,3 +14,15 @@
         <appender-ref ref="FILE"/>
     </root>
 </configuration>
+
+        <!--
+            Logging levels:
+                TRACE: this level gives all the nitty-gritty details of your application
+                DEBUG: Not as much detail as the TRACE level, but enough to do any debuggin if necessary
+                INFO: This gives general information about your application
+                WARN: This level is used when the developer needs to be aware of somehting, does not need to be catastrophic
+                ERROR: When something actually goes wrong use the error level
+                NONE (this turns off logging)
+            Note that the farther down the list you go, the less info you get. INFO level logging does not include DEBUG
+            or TRACE logs. If we set the level to TRACE then we will get all logs
+         -->
