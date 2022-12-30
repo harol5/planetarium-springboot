@@ -13,7 +13,6 @@ public class AuthenticationInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         HttpSession session = request.getSession();
-        System.out.println("prehandle called!!");
         if(session.getAttribute("user") != null){
             return true;
         }else {
